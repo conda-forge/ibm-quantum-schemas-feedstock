@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.8.20260605"
+  version: "0.9.20260612"
 
 package:
   name: ibm-quantum-schemas
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/i/ibm-quantum-schemas/ibm_quantum_schemas-${{ version }}.tar.gz
-  sha256: 560339dc284fe6c0c8cd792a33552fe6d9eaa3cb84034e8434318c1700b7fe2c
+  sha256: d22ad0f900fb897ad446ba7413979e003bdc29d75584d74890c8c8ccff3c6544
 
 build:
   number: 0
