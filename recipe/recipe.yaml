@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.9.20260612"
+  version: 0.10.20260723
 
 package:
   name: ibm-quantum-schemas
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/i/ibm-quantum-schemas/ibm_quantum_schemas-${{ version }}.tar.gz
-  sha256: d22ad0f900fb897ad446ba7413979e003bdc29d75584d74890c8c8ccff3c6544
+  sha256: e3435cd86140bf8e0d2fc09af9e7c3d799adb732928b99dc90079a7372197044
 
 build:
   number: 0
@@ -28,7 +28,8 @@ requirements:
     - pydantic >=2.11,<3.0.0
     - qiskit >=2.2.0,<3.0.0
     - samplomatic >=0.12.0
-
+    - qiskit-qasm3-import >=0.5.0,<1.0.0
+    - numpy >=1.26.2
 tests:
   - python:
       imports:
@@ -36,7 +37,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - "*"
+        - '*'
 
 about:
   summary: IBM Quantum Pydantic models.
